@@ -1,0 +1,4 @@
+sensor_msgs/Image        image            # Entrada de imagen a segmentar
+# Sera necesario agregar un valor para validar la visualizacion de la mascara generada
+---
+sensor_msgs/Image[]   masks            # Mascara generada por la busqueda

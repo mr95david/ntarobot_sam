@@ -1,0 +1,11 @@
+sensor_msgs/Image        image            # Entrada de imagen a segmentar
+geometry_msgs/Point[]    query_points     # Puntos para iniciar la segmentacion
+int32[]                  query_labels     # Marcas de puntos positivos y negativos
+std_msgs/Int32MultiArray boxes            # Contenedores de puntos unicamente positivos
+bool                     multimask        # Validacion de generador de mascaras multiples
+bool                     logits           # Envio de vuelta de logits
+# Sera necesario agregar un valor para validar la visualizacion de la mascara generada
+---
+sensor_msgs/Image[]   masks            # Mascara generada por la busqueda
+float32[]             scores           # Calificacion de la mascara
+sensor_msgs/Image[]   logits           # Activacion de la mascara
